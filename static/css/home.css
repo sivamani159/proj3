@@ -16,21 +16,3 @@
     width: 100%;
     position: relative;
 }
-.c1{
-    color: brown;
-    background-color: aqua;
-    text-align: center;
-}
-.c2{
-    color: greenyellow;
-    background-color: azure;
-    text-align: center;
-}
-.c3{
-    color: black;
-    background-color: aqua;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-}
