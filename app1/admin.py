@@ -16,4 +16,4 @@ class Student1Admin(admin.ModelAdmin):
 
 @admin.register(Student2)
 class Student2Admin(admin.ModelAdmin):
-    list_display=['id','name','email']
+    list_display=['id','name','email','fee']

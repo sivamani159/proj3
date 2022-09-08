@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app1.forms import StudentForm,UserInfo
+from app1.forms import StudentForm,UserInfo,Student2Form
 from app1.models import Userinfo
 
 # Create your views here.
@@ -29,4 +29,15 @@ def userinfo(request):
             form=UserInfo()
         else:
             print("invalid data")
+    return render(request,'home.html',{'form':form})
+
+def student2(request):
+    form=Student2Form()
+    if request.method=='POST':
+        form=Student2Form(request.POST)
+        if form.is_valid():
+            form.save()
+        else:
+            print("invalid data")
+        form=Student2Form()
     return render(request,'home.html',{'form':form})

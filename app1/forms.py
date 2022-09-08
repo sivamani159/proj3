@@ -20,3 +20,9 @@ class UserInfo(forms.Form):
     email=forms.EmailField(label='email',widget=forms.EmailInput(attrs={'class':'form-control','placeholder':'email'}))
     gender=forms.ChoiceField(choices=GENDER)
     contact=forms.IntegerField(label='mobile',widget=forms.TextInput(attrs={'class':'form-control','placeholder':'mobile'}))
+
+class Student2Form(forms.ModelForm):
+    class Meta:
+        model=(Student2)
+        fields="__all__"
+        
